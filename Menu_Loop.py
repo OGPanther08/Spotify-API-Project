@@ -1,8 +1,7 @@
-#Nathan Morris
 #This is a personal project, I am trying to use spotify API to do a few different things including:
 #Give me new music recommendations based on a playlist
 #Pretty much do spotify wrapped whenever I want to
-#End goal is to make a functional website that I can either put ads on to to make a little bit of money, or as a project for my resume
+#Explore a genre
 
 #I didn't use much commenting in the code, as the names of each def are pretty clear
 
@@ -14,8 +13,8 @@ import sys
 import re
 
 # Initialize Spotipy with OAuth
-sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id='566c0743af384beab5f443bbd02e52d7', 
-                                               client_secret='429d1782cbce41ffad72b969f09b3366',
+sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id='YOUR_CLIENT_ID', 
+                                               client_secret='YOUR_CLIENT_SECRET',
                                                redirect_uri='http://localhost:8888/callback',
                                                scope='playlist-modify-private playlist-modify-public user-library-read user-top-read'))
 
